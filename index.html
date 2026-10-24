@@ -1,32 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="الموقع تحت الإنشاء">
-  <title>الموقع تحت الإنشاء</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الهلال للسيارات | AL HELAL</title>
+<meta name="description" content="تواصل مع شركة الهلال للسيارات: اتصال وواتساب خدمة العملاء، حساباتنا الرسمية، وموقعنا على الخريطة.">
+<meta name="theme-color" content="#030406">
+<meta name="color-scheme" content="dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; base-uri 'none'; form-action 'none'">
+<meta property="og:type" content="website">
+<meta property="og:title" content="الهلال للسيارات | AL HELAL">
+<meta property="og:description" content="تواصل مع شركة الهلال للسيارات: اتصال وواتساب وحساباتنا الرسمية.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" as="image" href="assets/logo.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500&display=swap&text=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D9%87%D9%84%D8%A7%D9%84%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="page">
-    <div class="card">
-      <div class="icon" aria-hidden="true">
-        <span>⌁</span>
-      </div>
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="veil"></div>
+  <div class="beam"></div>
+  <div class="il"><img src="assets/logo.webp" alt="" width="1600" height="277"><span class="sheen"></span></div>
+</div>
+<div class="ambient" aria-hidden="true"></div>
+<canvas class="fx" id="fx" aria-hidden="true"></canvas>
+<main class="stage">
+  <header class="brand">
+    <h1 class="logo" id="logo"><img src="assets/logo.webp" width="1600" height="277" alt="AL HELAL — الهلال للسيارات" fetchpriority="high"><span class="sheen" aria-hidden="true"></span></h1>
+    <p class="name"><span lang="ar">شركة الهلال للسيارات</span></p>
+  </header>
 
-      <p class="eyebrow">COMING SOON</p>
-      <h1>الموقع تحت الإنشاء</h1>
-      <p class="description">
-        نعمل حاليًا على تجهيز الموقع.<br>
-        سنكون معكم قريبًا.
-      </p>
+  <section class="group primary" aria-labelledby="h-cs">
+    <h2 id="h-cs">خدمة العملاء</h2>
+    <ul class="grid">
+      <li><a class="card" data-key="CUSTOMER_SERVICE_PHONE_1" data-type="tel"><i class="ic" data-i="phone"></i><b>اتصال</b><span class="sub">خدمة العملاء 1</span><bdi class="val" dir="ltr"></bdi></a></li>
+      <li><a class="card" data-key="CUSTOMER_SERVICE_PHONE_2" data-type="tel"><i class="ic" data-i="phone"></i><b>اتصال</b><span class="sub">خدمة العملاء 2</span><bdi class="val" dir="ltr"></bdi></a></li>
+      <li><a class="card" data-key="CUSTOMER_SERVICE_WHATSAPP_1" data-type="wa"><i class="ic" data-i="wa"></i><b>واتساب</b><span class="sub">خدمة العملاء 1</span><bdi class="val" dir="ltr"></bdi></a></li>
+      <li><a class="card" data-key="CUSTOMER_SERVICE_WHATSAPP_2" data-type="wa"><i class="ic" data-i="wa"></i><b>واتساب</b><span class="sub">خدمة العملاء 2</span><bdi class="val" dir="ltr"></bdi></a></li>
+    </ul>
+  </section>
 
-      <div class="loader" aria-label="جاري التجهيز">
-        <span></span><span></span><span></span>
-      </div>
-    </div>
+  <section class="group" aria-labelledby="h-so">
+    <h2 id="h-so">حساباتنا الرسمية</h2>
+    <ul class="social">
+      <li><a class="card mini" data-key="FACEBOOK_URL" data-type="url" data-host="facebook.com,fb.com"><i class="ic" data-i="fb"></i><b>فيسبوك</b></a></li>
+      <li><a class="card mini" data-key="INSTAGRAM_URL" data-type="url" data-host="instagram.com"><i class="ic" data-i="ig"></i><b>إنستغرام</b></a></li>
+      <li><a class="card mini" data-key="TIKTOK_URL" data-type="url" data-host="tiktok.com"><i class="ic" data-i="tt"></i><b>تيك توك</b></a></li>
+    </ul>
+  </section>
 
-    <footer>© 2026 جميع الحقوق محفوظة</footer>
-  </main>
+  <section class="group" aria-labelledby="h-lo">
+    <h2 id="h-lo" class="sr">الموقع</h2>
+    <a class="card loc" data-key="GOOGLE_MAPS_URL" data-type="url" data-host="google.com,goo.gl,g.co"><i class="ic" data-i="pin"></i><b>موقعنا على خرائط جوجل</b><span class="sub">افتح الاتجاهات</span></a>
+  </section>
+
+  <footer><img src="assets/logo.webp" alt="" width="1600" height="277" loading="lazy"><small><bdi lang="en" dir="ltr">AL HELAL</bdi> — الهلال للسيارات</small></footer>
+</main>
+<noscript><p class="ns">فعّل JavaScript لعرض أزرار التواصل.</p></noscript>
+<script src="config.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
